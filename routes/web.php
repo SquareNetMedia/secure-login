@@ -1,8 +1,10 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
+
 Route::group(['middleware' => 'web'], function () {
 });
 
-Route::get('/'config('config.url'), function () {
-    return 'this is test route';
+Route::get('/a', function () {
+   return secure-login::config.url;
 });
