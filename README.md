@@ -1,4 +1,4 @@
-# Very short description of the package
+# Secure Login: Basic Laravel Login
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/squarenetmedia/secure-login.svg?style=flat-square)](https://packagist.org/packages/squarenetmedia/secure-login)
 [![Build Status](https://img.shields.io/travis/squarenetmedia/secure-login/master.svg?style=flat-square)](https://travis-ci.org/squarenetmedia/secure-login)
