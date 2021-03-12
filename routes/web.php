@@ -3,6 +3,6 @@
 Route::group(['middleware' => 'web'], function () {
 });
 
-    Route::get('/a', function () {
-        return 'this is test route';
-    });
+Route::get('/'config('config.url'), function () {
+    return 'this is test route';
+});
