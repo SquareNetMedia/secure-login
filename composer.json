@@ -3,7 +3,8 @@
     "description": "Secure Login and Registration Package",
     "keywords": [
         "squarenetmedia",
-        "secure-login"
+        "secure-login",
+        "laravel 8"
     ],
     "homepage": "https://github.com/squarenetmedia/secure-login",
     "license": "MIT",
@@ -16,7 +17,7 @@
         }
     ],
     "require": {
-        "php": "^7.1",
+        "php": "^6.1",
         "illuminate/support": "^6.0"
     },
     "require-dev": {
