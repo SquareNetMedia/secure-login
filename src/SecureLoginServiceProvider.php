@@ -22,7 +22,7 @@ class SecureLoginServiceProvider extends ServiceProvider
         if ($this->app->runningInConsole()) {
             $this->publishes([
                 __DIR__.'/../config/config.php' => config_path('secure-login.php'),
-            ], 'config');
+            ], 'secure-login-config');
 
             // Publishing the views.
             $this->publishes([
