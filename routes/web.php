@@ -1,11 +1,18 @@
 <?php
-
 use Illuminate\Support\Facades\Route;
 
-Route::group(['middleware' => 'web'], function () {
+Route::group(
+   [
+      'middleware' => 'web', 
+      'prefix' => Config::get('secure-login.url')
+   ], function () {
+
+      Route::get('/alex', function () {
+         return "secured";
+      });
 });
 
-<<<<<<< HEAD
+
 
 Route::group(array('prefix' => Config::get('secure-login.url')), function ()
 {
@@ -23,8 +30,3 @@ Route::group(array('prefix' => Config::get('secure-login.url')), function ()
    });
 
 });
-=======
-Route::get('/a', function () {
-    return secure - login::config.url;
-});
->>>>>>> 3d4cae404397ad5051979476cfa84528345f8e36
