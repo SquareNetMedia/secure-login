@@ -4,6 +4,7 @@
  * You can place your custom package configuration in here.
  */
 return [
+
     /*
     |--------------------------------------------------------------------------
     | Admin base URL
@@ -14,4 +15,18 @@ return [
     */
 
     'url' => 'admin',
+
+
+    /*
+    |--------------------------------------------------------------------------
+    | Database Settings
+    |--------------------------------------------------------------------------
+    |
+    | Here are each of the database connections setup for your application.
+    |
+    */
+
+    'db_prefix' => '',
+        
+
 ];

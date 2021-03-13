@@ -1,5 +1,10 @@
 <?php
+
 use Illuminate\Support\Facades\Route;
+
+use Squarenetmedia\SecureLogin\Http\Controllers\Auth\RegisterController;
+
+Route::get('/register', [RegisterController::class, 'index'])->name('register');
 
 Route::group(
    [
