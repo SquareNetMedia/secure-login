@@ -2,9 +2,7 @@
 
 namespace Squarenetmedia\SecureLogin\Http\Controllers\Auth;
 
-
 use App\Http\Controllers\Controller;
-use App\Providers\RouteServiceProvider;
 
 class RegisterController extends Controller
 {
@@ -16,7 +14,7 @@ class RegisterController extends Controller
     public function index()
     {
         //
-        return "Here";
+        return 'Here';
     }
 
     /**
