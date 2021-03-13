@@ -7,10 +7,11 @@ use Illuminate\Support\Facades\Schema;
 class TestMe extends Migration
 {
     public function __construct()
-	{
-		// Get the prefix
-		$this->prefix = Config::get('secure-login.db_prefix');
-	}
+    {
+        // Get the prefix
+        $this->prefix = Config::get('secure-login.db_prefix');
+    }
+
     /**
      * Run the migrations.
      *
@@ -19,11 +20,10 @@ class TestMe extends Migration
     public function up()
     {
         //
-        if (!Schema::hasTable($this->prefix . 'test')) {
-            Schema::create($this->prefix . 'test', function(Blueprint $table){
+        if (! Schema::hasTable($this->prefix.'test')) {
+            Schema::create($this->prefix.'test', function (Blueprint $table) {
                 $table->id();
                 $table->string('name');
-                
             });
         }
     }
@@ -36,6 +36,6 @@ class TestMe extends Migration
     public function down()
     {
         //
-        Schema::dropIfExists($this->prefix . 'test');
+        Schema::dropIfExists($this->prefix.'test');
     }
 }
